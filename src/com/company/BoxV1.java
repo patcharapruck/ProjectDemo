@@ -9,6 +9,8 @@ public class BoxV1 {
     private String address;
     private Double result;
 
+    public double x,y,z;
+
     public String getName() {
         return Name;
     }
@@ -48,10 +50,14 @@ public class BoxV1 {
     public void setAddress(String address) {
         this.address = address;
     }
-public Double BMI(){
-   result = weight / Math.pow((height*0.01),2);
+    public Double BMI(){
+        result = weight / Math.pow((height*0.01),2);
         return result;
-}
+    }
+
+    public  double sum(){
+        return x+y+z;
+    }
 
 
 }
